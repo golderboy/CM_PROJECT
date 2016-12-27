@@ -27,6 +27,7 @@ type
     procedure BitBtn2Click(Sender: TObject);
     procedure hi_tKeyPress(Sender: TObject; var Key: Char);
     procedure wi_tKeyPress(Sender: TObject; var Key: Char);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -95,6 +96,11 @@ if ( (bmi >= formatfloat('0.##',35.00)) AND (bmi <= formatfloat('0.##',39.99)) )
 if ( (bmi >= formatfloat('0.##',40.00)) OR (bmi < formatfloat('0.##',13.00)) ) then
   data_l.Caption := ' ¼ÅÅÑ¾·ì '+bmi+' ¹Í¡à¡³µì' ;
       end;
+end;
+
+procedure Tbmi_f.FormShow(Sender: TObject);
+begin
+   btn1.Enabled := False;
 end;
 
 procedure Tbmi_f.hi_tKeyPress(Sender: TObject; var Key: Char);

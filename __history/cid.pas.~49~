@@ -94,12 +94,7 @@ if not (Key in [#8, '0'..'9', DecimalSeparator]) then begin
     cid_input.Clear;
     Key := #0;
   end;
-
-  if length(cid_input.Text) > 12 then
-    begin
-    ShowMessage(' กรุณากรอกตัวเลข 12 หลัก ');
-    cid_input.Clear;
-    end;
+  if cid_input.Text then
 
 end;
 

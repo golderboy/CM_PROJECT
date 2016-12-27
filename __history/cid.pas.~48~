@@ -46,7 +46,7 @@ procedure Tcid_f.btn_chkClick(Sender: TObject);
    arr1 :array[1..12]  of integer;
    arr2 :array[1..12]  of integer;
 begin
-while length(cid_input.Text) <=12 do
+while length(cid_input.Text) <12 do
   begin
     cid_input.Text :='0'+cid_input.Text;
   end;
@@ -94,13 +94,6 @@ if not (Key in [#8, '0'..'9', DecimalSeparator]) then begin
     cid_input.Clear;
     Key := #0;
   end;
-
-  if length(cid_input.Text) > 12 then
-    begin
-    ShowMessage(' กรุณากรอกตัวเลข 12 หลัก ');
-    cid_input.Clear;
-    end;
-
 end;
 
 procedure Tcid_f.RzBitBtn1Click(Sender: TObject);

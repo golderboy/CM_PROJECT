@@ -12,7 +12,6 @@ object bmi_f: Tbmi_f
   Font.Style = []
   OldCreateOrder = False
   WindowState = wsMaximized
-  OnShow = FormShow
   DesignSize = (
     736
     530)
