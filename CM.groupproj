@@ -1,0 +1,72 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{46E27D9A-A7B9-4A8B-B6B6-4809987EED11}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="NT_delphi.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="F:\CID\cid_chk.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="F:\bmi\bmi.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="F:\doo_doung\doo_dung.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="NT_delphi">
+			<MSBuild Projects="NT_delphi.dproj"/>
+		</Target>
+		<Target Name="NT_delphi:Clean">
+			<MSBuild Projects="NT_delphi.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NT_delphi:Make">
+			<MSBuild Projects="NT_delphi.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="cid_chk">
+			<MSBuild Projects="F:\CID\cid_chk.dproj"/>
+		</Target>
+		<Target Name="cid_chk:Clean">
+			<MSBuild Projects="F:\CID\cid_chk.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="cid_chk:Make">
+			<MSBuild Projects="F:\CID\cid_chk.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="bmi">
+			<MSBuild Projects="F:\bmi\bmi.dproj"/>
+		</Target>
+		<Target Name="bmi:Clean">
+			<MSBuild Projects="F:\bmi\bmi.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="bmi:Make">
+			<MSBuild Projects="F:\bmi\bmi.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="doo_dung">
+			<MSBuild Projects="F:\doo_doung\doo_dung.dproj"/>
+		</Target>
+		<Target Name="doo_dung:Clean">
+			<MSBuild Projects="F:\doo_doung\doo_dung.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="doo_dung:Make">
+			<MSBuild Projects="F:\doo_doung\doo_dung.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="NT_delphi;cid_chk;bmi;doo_dung"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="NT_delphi:Clean;cid_chk:Clean;bmi:Clean;doo_dung:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="NT_delphi:Make;cid_chk:Make;bmi:Make;doo_dung:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>
