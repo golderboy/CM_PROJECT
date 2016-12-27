@@ -1,0 +1,34 @@
+unit cid;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, cxGraphics, cxControls, cxLookAndFeels, cxLookAndFeelPainters,
+  cxContainer, cxEdit, ExtCtrls, cxTextEdit, StdCtrls, Buttons, cxLabel,
+  RzButton, JvExControls, JvNavigationPane;
+
+type
+  Tcid_f = class(TForm)
+    JvNavPanelHeader1: TJvNavPanelHeader;
+    RzBitBtn1: TRzBitBtn;
+    cxLabel1: TcxLabel;
+    btn_chk: TBitBtn;
+    cid_input: TcxTextEdit;
+    cxLabel2: TcxLabel;
+    panal1: TPanel;
+    BitBtn2: TBitBtn;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  cid_f: Tcid_f;
+
+implementation
+
+{$R *.dfm}
+
+end.

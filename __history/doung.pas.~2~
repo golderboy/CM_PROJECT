@@ -1,0 +1,40 @@
+unit doung;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, cxGraphics, cxControls, cxLookAndFeels, cxLookAndFeelPainters,
+  cxContainer, cxEdit, StdCtrls, Buttons, cxTextEdit, cxMemo, cxLabel, ComCtrls,
+  RzButton, ExtCtrls, JvExControls, JvNavigationPane;
+
+type
+  Tdoung_f = class(TForm)
+    JvNavPanelHeader1: TJvNavPanelHeader;
+    Panel1: TPanel;
+    RzBitBtn1: TRzBitBtn;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    ComboBox1: TComboBox;
+    cxLabel1: TcxLabel;
+    cxMemo1: TcxMemo;
+    BitBtn1: TBitBtn;
+    TabSheet2: TTabSheet;
+    cxMemo2: TcxMemo;
+    cxLabel2: TcxLabel;
+    ComboBox2: TComboBox;
+    BitBtn2: TBitBtn;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  doung_f: Tdoung_f;
+
+implementation
+
+{$R *.dfm}
+
+end.

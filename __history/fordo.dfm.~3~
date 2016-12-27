@@ -1,0 +1,68 @@
+object for_f: Tfor_f
+  Left = 0
+  Top = 0
+  Caption = 'for_f'
+  ClientHeight = 214
+  ClientWidth = 504
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Memo1: TMemo
+    Left = 254
+    Top = 8
+    Width = 185
+    Height = 185
+    Lines.Strings = (
+      '')
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 165
+    Top = 56
+    Width = 75
+    Height = 25
+    Caption = 'run for 5'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 165
+    Top = 25
+    Width = 75
+    Height = 25
+    Caption = 'clear memo'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Edit1: TEdit
+    Left = 24
+    Top = 91
+    Width = 97
+    Height = 21
+    TabOrder = 3
+  end
+  object Button3: TButton
+    Left = 165
+    Top = 87
+    Width = 75
+    Height = 25
+    Caption = 'run to edit'
+    TabOrder = 4
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 165
+    Top = 118
+    Width = 75
+    Height = 25
+    Caption = 'run down'
+    TabOrder = 5
+    OnClick = Button4Click
+  end
+end

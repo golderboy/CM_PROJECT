@@ -1,0 +1,24 @@
+unit caseof;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  Tcase_f = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  case_f: Tcase_f;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/12/27 18:10:18.000.692,=C:\Users\JK2548\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/12/27 18:10:43.000.964,F:\mian.pas=C:\Users\JK2548\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/12/27 18:10:43.000.964,F:\mian.dfm=C:\Users\JK2548\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2016/12/27 18:11:09.000.850,F:\cm_project\mian.dfm=F:\mian.dfm</Transaction>
+    <Transaction>2016/12/27 18:11:09.000.850,F:\cm_project\mian.pas=F:\mian.pas</Transaction>
+    <Transaction>2016/12/27 18:11:36.000.889,F:\cm_project\NT_delphi.dproj=C:\Users\JK2548\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2016/12/27 18:23:31.000.589,=F:\cm_project\Unit2.pas</Transaction>
+    <Transaction>2016/12/27 18:23:59.000.737,F:\cm_project\Unit2.pas=F:\cm_project\bmi.pas</Transaction>
+    <Transaction>2016/12/27 18:23:59.000.737,F:\cm_project\Unit2.dfm=F:\cm_project\bmi.dfm</Transaction>
+    <Transaction>2016/12/27 18:33:31.000.988,=F:\cm_project\Unit2.pas</Transaction>
+    <Transaction>2016/12/27 18:34:05.000.101,F:\cm_project\Unit2.pas=F:\cm_project\doung.pas</Transaction>
+    <Transaction>2016/12/27 18:34:05.000.101,F:\cm_project\Unit2.dfm=F:\cm_project\doung.dfm</Transaction>
+    <Transaction>2016/12/27 18:39:16.000.323,=F:\cm_project\Unit2.pas</Transaction>
+    <Transaction>2016/12/27 18:39:28.000.009,F:\cm_project\Unit2.dfm=F:\cm_project\cid.dfm</Transaction>
+    <Transaction>2016/12/27 18:39:28.000.009,F:\cm_project\Unit2.pas=F:\cm_project\cid.pas</Transaction>
+    <Transaction>2016/12/27 18:46:13.490,=F:\cm_project\Unit2.pas</Transaction>
+    <Transaction>2016/12/27 18:46:37.043,F:\cm_project\caseof.pas=F:\cm_project\Unit2.pas</Transaction>
+    <Transaction>2016/12/27 18:46:37.043,F:\cm_project\caseof.dfm=F:\cm_project\Unit2.dfm</Transaction>
+    <Transaction>2016/12/27 18:54:00.220,=F:\cm_project\Unit2.pas</Transaction>
+    <Transaction>2016/12/27 18:55:27.322,F:\cm_project\fordo.pas=F:\cm_project\Unit2.pas</Transaction>
+    <Transaction>2016/12/27 18:55:27.322,F:\cm_project\fordo.dfm=F:\cm_project\Unit2.dfm</Transaction>
+    <Transaction>2016/12/27 19:05:59.041,=F:\cm_project\Unit2.pas</Transaction>
+    <Transaction>2016/12/27 19:06:59.276,F:\cm_project\ifthenelse.dfm=F:\cm_project\Unit2.dfm</Transaction>
+    <Transaction>2016/12/27 19:06:59.276,F:\cm_project\ifthenelse.pas=F:\cm_project\Unit2.pas</Transaction>
+    <Transaction>2016/12/27 19:13:16.708,=F:\cm_project\Unit2.pas</Transaction>
+    <Transaction>2016/12/27 19:17:56.197,=F:\cm_project\Unit3.pas</Transaction>
+    <Transaction>2016/12/27 19:18:30.333,F:\cm_project\var_1.dfm=F:\cm_project\Unit2.dfm</Transaction>
+    <Transaction>2016/12/27 19:18:30.333,F:\cm_project\var_1.pas=F:\cm_project\Unit2.pas</Transaction>
+    <Transaction>2016/12/27 19:18:41.872,F:\cm_project\var_2.dfm=F:\cm_project\Unit3.dfm</Transaction>
+    <Transaction>2016/12/27 19:18:41.872,F:\cm_project\var_2.pas=F:\cm_project\Unit3.pas</Transaction>
+    <Transaction>2016/12/27 19:24:11.725,=F:\cm_project\Unit3.pas</Transaction>
+    <Transaction>2016/12/27 19:25:57.022,F:\cm_project\whiledo.dfm=F:\cm_project\Unit3.dfm</Transaction>
+    <Transaction>2016/12/27 19:25:57.022,F:\cm_project\whiledo.pas=F:\cm_project\Unit3.pas</Transaction>
+  </Transactions>
+</BorlandProject>

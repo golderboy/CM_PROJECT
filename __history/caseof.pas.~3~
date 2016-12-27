@@ -1,0 +1,73 @@
+unit caseof;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  Tcase_f = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    ComboBox1: TComboBox;
+    Button1: TButton;
+    Edit1: TEdit;
+    Button2: TButton;
+    Button3: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  case_f: Tcase_f;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tcase_f.Button1Click(Sender: TObject);
+begin
+case combobox1.ItemIndex of
+ -1: showmessage('ยังไม่ได้เลือก');
+ 0: showmessage('เลือกตัวเลือกที่ 1');
+ 1: showmessage('เลือกตัวเลือกที่ 2');
+ 2: showmessage('เลือกตัวเลือกที่ 3');
+ 3: showmessage('เลือกตัวเลือกที่ 4');
+else showmessage('เลือกตัวเลือกอื่นๆ');
+end;
+end;
+
+procedure Tcase_f.Button2Click(Sender: TObject);
+var txt:char;
+begin
+ txt:=edit1.Text[1];
+ case txt of
+ 'a':showmessage('first type is a');
+ 'b':showmessage('first type is b');
+ 'c':showmessage('first type is c');
+ 'd':showmessage('first type is d');
+ 'e':showmessage('first type is e');
+ 'f':showmessage('first type is f');
+ else showmessage('ไม่เข้าข่าย');
+ end;
+end;
+
+procedure Tcase_f.Button3Click(Sender: TObject);
+begin
+case (5+6) of
+ 9: showmessage('ตอบ 9');
+ 10: showmessage('ตอบ 10');
+ 11: showmessage('ตอบ 11');
+ 12: showmessage('ตอบ 12');
+ 13: showmessage('ตอบ 13');
+else showmessage('เลือกตัวเลือกอื่นๆ');
+end;
+end;
+
+end.

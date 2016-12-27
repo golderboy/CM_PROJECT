@@ -1,0 +1,20 @@
+program NT_delphi;
+
+uses
+  Forms,
+  mian in 'mian.pas' {Form1},
+  bmi in 'bmi.pas' {bmi_f},
+  doung in 'doung.pas' {doung_f},
+  cid in 'cid.pas' {cid_f};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(Tbmi_f, bmi_f);
+  Application.CreateForm(Tdoung_f, doung_f);
+  Application.CreateForm(Tcid_f, cid_f);
+  Application.Run;
+end.

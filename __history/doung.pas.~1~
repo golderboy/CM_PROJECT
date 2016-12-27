@@ -1,0 +1,24 @@
+unit doung;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  Tdoung_f = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  doung_f: Tdoung_f;
+
+implementation
+
+{$R *.dfm}
+
+end.

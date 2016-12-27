@@ -1,0 +1,64 @@
+unit doung;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, cxGraphics, cxControls, cxLookAndFeels, cxLookAndFeelPainters,
+  cxContainer, cxEdit, StdCtrls, Buttons, cxTextEdit, cxMemo, cxLabel, ComCtrls,
+  RzButton, ExtCtrls, JvExControls, JvNavigationPane;
+
+type
+  Tdoung_f = class(TForm)
+    JvNavPanelHeader1: TJvNavPanelHeader;
+    Panel1: TPanel;
+    RzBitBtn1: TRzBitBtn;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    ComboBox1: TComboBox;
+    cxLabel1: TcxLabel;
+    cxMemo1: TcxMemo;
+    BitBtn1: TBitBtn;
+    TabSheet2: TTabSheet;
+    cxMemo2: TcxMemo;
+    cxLabel2: TcxLabel;
+    ComboBox2: TComboBox;
+    BitBtn2: TBitBtn;
+    procedure BitBtn1Click(Sender: TObject);
+    procedure RzBitBtn1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  doung_f: Tdoung_f;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tdoung_f.BitBtn1Click(Sender: TObject);
+begin
+cxmemo1.Visible := true;
+cxmemo2.Visible := false;
+  case ComboBox1.ItemIndex of
+    0 : cxmemo1.Text := '1 ชอบเป็นจุดเด่นเชียวนะคุณถ้ามีคนสนใจล่ะก็ถึงไหนถึงกันสิถ้าใครทำเป็นว่าไม่สนใจก็จะฉุนขึ้นมาทันที';
+    1 : cxmemo1.Text := '2 คุณเม้าท์เก่งมากในหมู่เพื่อนๆเรียกว่าเป็นจุดศูนย์กลางในการพูดคุยเลยทีเดียว เวลาจับกลุ่มคุยกันทีพูดกันได้เป็นชั่วโมงเชียวล่ะ';
+    3 : cxmemo1.Text := '4 คุณชอบเป็นฝ่ายฟังเสียมากกว่าทุกคนจึงชอบพูดคุยถึงปัญหาต่างๆ ให้ฟังอยู่เรื่อยแต่บางทีการที่วิจารณ์คนอื่นตรงไปตรงมาก็อาจทำให้คนไม่ชอบ คุณบ้างเหมือนกัน';
+    2 : cxmemo1.Text := '3 คุณเป็นคนสนุกสนานเวลาพูดชอบออกท่าทางประกอบทำให้เพื่อนๆเข้าใจและคล้อยตามไปด้วยดึงดูดความสนใจผู้คนได้ดี';
+   else
+   begin
+      showmessage('ไม่ได้เลือกกลุ๊ปเลือด');
+      cxmemo1.Visible  := false;
+   end;
+   end;
+end;
+
+procedure Tdoung_f.RzBitBtn1Click(Sender: TObject);
+begin
+close;
+end;
+
+end.

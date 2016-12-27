@@ -1,0 +1,24 @@
+unit cid;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  Tcid_f = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  cid_f: Tcid_f;
+
+implementation
+
+{$R *.dfm}
+
+end.
